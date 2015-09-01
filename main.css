@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    
+    padding-top: 300px;
+    font-size: 100px;
+}
+h2{
+    font-size: 70px;
+}
+ul{
+    float: right;
+}
+li{
+    display: inline-block;
+    padding: 0 10px;
+    height: 100%;
+}
+li:hover{
+    background-color: red;
+}
+header{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+#headerContent{
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid black;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+}
+#home{
+    float: left;
+    padding-left: 10px;
+}
+#landing{
+    background: url("https://m2.behance.net/rendition/pm/11301475/disp/2dde6feb31536240d8cd57bf5ac5e05e.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+}
+.links{
+    display: inline-block;
+    border: 2px solid orange;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 20px;
+    background-color: black;
+}
+#aboutMeTitle{
+    width: 100%;
+    height: 300px;
+    background-color: orange;
+}
+#work{
+    background: red;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 1000px;
+    width: 100%;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
