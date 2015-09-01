@@ -11,12 +11,20 @@ a{
     text-decoration: none;
 }
 h1{
-    
-    padding-top: 300px;
-    font-size: 100px;
+    font-size: 90px;
+    color: orange;
 }
 h2{
-    font-size: 70px;
+    font-size: 40px;
+    color: darkorange;
+}
+h3{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+h4{
+    padding-top: 35px;
+    color: black;
 }
 ul{
     float: right;
@@ -26,59 +34,140 @@ li{
     padding: 0 10px;
     height: 100%;
 }
+#aboutMe p{
+    font-size: 20px;
+}
 li:hover{
-    background-color: red;
-}
-header{
-    position: fixed;
-    height: 60px;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-#headerContent{
-    max-width: 800px;
-    margin: 0 auto;
-    border: 2px solid black;
-    height: 100%;
-    background: rgba(0,0,0,0.2);
-}
-#home{
-    float: left;
-    padding-left: 10px;
+    color: orange;
 }
 #landing{
-    background: url("https://m2.behance.net/rendition/pm/11301475/disp/2dde6feb31536240d8cd57bf5ac5e05e.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 500px;
-    width: 100%;
+    padding: 40px 0;
 }
-.links{
-    display: inline-block;
-    border: 2px solid orange;
-    border-radius: 10%;
-    padding: 10px;
-    margin: 20px;
-    background-color: black;
-}
-#aboutMeTitle{
+#aboutMe{
     width: 100%;
-    height: 300px;
     background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#textContainer{
+    padding: 20px 0;
 }
 #work{
-    background: red;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 1000px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 70px 0;
+}
+.box{
+    height: 200px;
+    width: 300px;
+    background-color: darkred;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+#boxApp{
+    background: url(/vote.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+#boxNews{
+    background: url(/news.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+#box1{
+    background: url(/twitchAPI.png) no-repeat;
+    background-size: cover;
+    background-position: 60%; 
+}
+#box2{
+    background: url(/wiki.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#box3{
+    background: url(/weather.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#box4{
+    background: url(/clock.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#box5{
+    background: url(/calc.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#box6{
+    background: url(/quote.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#box7{
+    background: url(/tic.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.cover{
+    height: 25%;
     width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: -50px;
+}
+#contact{
+    background-color: lightblue;
+    min-height: 200px;
+}
+footer {
+    height: 100px;
+    background-color: crimson;
+}
+.icons{
+    margin-right: 100px;
+    float: right;
+}
+.fa-stack{
+    transition: color 0.8s ease;
+    font-size: 40px;
+    padding-top: 10px;
+}
+.fa:hover{
+    color: black;
+}
+.fa-circle{
+  color: white;
+}
+.fa-stack-1x{
+  color: crimson;
+}
+a:hover, a:visited, a:focus, a:active{
+  text-decoration: none;
 }
 .group:after {
   content: "";
   display: table;
   clear: both;
+}
+
+
+@media (max-width: 500px){
+    .fa-stack{
+    transition: color 0.8s ease;
+    font-size: 15px;
+    padding-top: 2px;
+    }
+    footer{
+    height: 50px;
+    }
 }
